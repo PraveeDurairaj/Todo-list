@@ -1,38 +1,150 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background:rgb(171, 171, 221);
+}
+.main-container{
+  width: 100vw;
+  height: 10vh;
   text-align: center;
+  margin:30px 0 50px 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container h1{
+  font-size: 40px;
+  margin-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container input{
+  width: 50vw;
+  height: 6vh;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-container button{
+  height: 6vh;
+  padding: 0 15px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 600;
+}
+.main-container button:hover{
+  background:rgb(122, 105, 184);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.task-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.task{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 5px 0;
+  
+  
+}
+.task p{
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(87, 74, 172);
+  margin-right: 10px;
+  font-size: 18px;
+  width: 40vw;
+}
+.task button{
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color:white;
+  border: none;
+}
+.task button:hover{
+  background:rgb(122, 105, 184);
+  color: white;
+} 
+@media screen and (max-width:580px) {
+  *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  body{
+    background:rgb(171, 171, 221);
   }
+  .main-container{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin:30px 0 50px 0;
+  }
+  .main-container h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .main-container input{
+    width: 75vw;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .main-container button{
+    height: 6vh;
+    padding: 0 15px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+  }
+  .main-container button:hover{
+    background:rgb(122, 105, 184);
+    color: white;
+  }
+  .task-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .task{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 5px 0;
+    align-items: center;
+    
+    
+  }
+  .task p{
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(87, 74, 172);
+    font-size: 18px;
+    width: 75vw;
+  }
+  .task button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color:white;
+    border: none;
+  }
+  .task button:hover{
+    background:rgb(122, 105, 184);
+    color: white;
+  } 
 }
